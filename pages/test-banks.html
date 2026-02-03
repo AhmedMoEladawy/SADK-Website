@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Deutsch Klub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/Logo.png">
+    <link rel="stylesheet" href="../css/test-banks.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../images/Logo.png" alt="Deutsch Klub Logo" class="logo-img">
+                <span class="logo-text">STEM Asyut Deutsch Klub</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Team</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Learn German ▼</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#" class="dropdown-toggle-sub">Materials</a></li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-toggle-sub">G10 ▼</a>
+                            <ul class="dropdown-submenu">
+                                <li class="dropdown-item"><a href="curriculum/g10/semester1/lektionen.html">Semester 1</a></li>
+                                <li class="dropdown-item"><a href="curriculum/g10/semester2/lektionen.html">Semester 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-toggle-sub">G11 ▼</a>
+                            <ul class="dropdown-submenu">
+                                <li class="dropdown-item"><a href="curriculum/g11/semester1/lektionen.html">Semester 1</a></li>
+                                <li class="dropdown-item"><a href="curriculum/g11/semester2/lektionen.html">Semester 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                <li class="nav-item"><a href="test-banks.html" class="nav-link">Quizzes</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Interactive Quizzes</h1>
+        <p>Practice with instant feedback - Viel Erfolg!</p>
+    </div>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="test-intro">
+                <p>
+                    Welcome to our interactive test bank! Practice your Deutsch skills with multiple-choice 
+                    questions and get instant feedback. Select your answer and see if you're correct immediately.
+                </p>
+                <div class="score-display" id="scoreDisplay">
+                    <span>Score: <strong id="score">0</strong> / <strong id="total">0</strong></span>
+                </div>
+            </div>
+
+            <div class="questions-container" id="questionsContainer">
+                <!-- Questions will be dynamically loaded here -->
+            </div>
+
+            <div class="test-actions">
+                <button class="btn btn-primary" id="checkAllBtn">Check All Answers</button>
+                <button class="btn btn-secondary" id="resetBtn">Reset Test</button>
+            </div><br>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deutsch Klub</h3>
+                    <p>Empowering students to excel in German language learning</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Team</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="test-banks.html">Quizzes</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p class="contact-number">+201024012428</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564110370482" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:stemasyutdeutschklub@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/company/stem-asyut-deutsch-klub/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbBIB41ISTkC7JuaUb1q" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deutsch Klub - Deutsch Klub Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/test-banks.js"></script>
+</body>
+</html>
