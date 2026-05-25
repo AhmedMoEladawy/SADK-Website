@@ -1,0 +1,309 @@
+/* ===== Resources Page Styles ===== */
+
+.resources-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    position: relative;
+}
+
+.resources-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1e293b;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.section-title i {
+    color: #dc2626;
+    font-size: 2rem;
+}
+
+/* PDF Viewer Wrapper */
+.pdf-viewer-wrapper {
+    margin-bottom: 60px;
+}
+
+.pdf-container {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdf-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
+}
+
+.pdf-placeholder {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    padding: 50px 40px;
+    text-align: center;
+    color: white;
+}
+
+.pdf-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2.5rem;
+    color: #ef4444;
+}
+
+.pdf-placeholder h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.pdf-placeholder p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.pdf-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pdf-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    font-size: 1rem;
+}
+
+/* Resources Categories */
+.resources-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.category-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.category-header {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.category-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #60a5fa;
+}
+
+.category-header h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+.category-links {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.resource-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #1e293b;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.resource-link:hover {
+    background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+    transform: translateX(8px);
+    border-color: transparent;
+}
+
+.resource-link:hover .link-info h4,
+.resource-link:hover .link-info p {
+    color: white;
+}
+
+.resource-link:hover .link-arrow {
+    color: white;
+    transform: translateX(5px);
+}
+
+.resource-link i:first-child {
+    font-size: 1.5rem;
+    color: #3b82f6;
+}
+
+.resource-link:hover i:first-child {
+    color: white;
+}
+
+.link-info {
+    flex: 1;
+}
+
+.link-info h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.link-info p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 0;
+}
+
+.link-arrow {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    transition: transform 0.3s ease;
+}
+
+/* Tips Section */
+.tips-section {
+    margin-top: 40px;
+}
+
+.tips-card {
+    background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    border-left: 5px solid #f59e0b;
+}
+
+.tips-icon {
+    width: 60px;
+    height: 60px;
+    background: #f59e0b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.tips-content h3 {
+    font-size: 1.5rem;
+    color: #92400e;
+    margin-bottom: 15px;
+}
+
+.tips-content p {
+    color: #78350f;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.tips-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .resources-section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .pdf-placeholder {
+        padding: 30px 20px;
+    }
+    
+    .pdf-placeholder h3 {
+        font-size: 1.4rem;
+    }
+    
+    .resources-categories {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .category-header {
+        padding: 20px;
+    }
+    
+    .category-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .resource-link {
+        padding: 12px 15px;
+    }
+    
+    .tips-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 25px;
+    }
+    
+    .tips-content p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-buttons {
+        flex-direction: column;
+    }
+    
+    .pdf-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
